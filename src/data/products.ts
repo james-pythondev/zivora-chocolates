@@ -1,0 +1,226 @@
+import type { Product } from '../types';
+
+export const CHOCOLATE_PRODUCTS: Product[] = [
+  {
+    id: 'choc-dark-70',
+    name: 'Pure Mountain Dark 70%',
+    category: 'chocolate',
+    subCategory: 'dark',
+    tagline: 'Deep, rich cocoa with gentle hill-country fruit notes',
+    description: 'Slow-tempered 70% dark chocolate crafted in small batches with single-origin beans and pure cocoa butter. Clean snap, silky melt, and subtle fruity undertones.',
+    ingredients: 'Cocoa solids 70%, Cocoa butter, Unrefined cane sugar, Natural vanilla',
+    image: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80',
+    badge: 'Popular',
+    sizeOptions: [
+      { label: '250 g pack', weight: '250g', price: 230 },
+      { label: '500 g pack', weight: '500g', price: 440 },
+      { label: '1 kg box', weight: '1kg', price: 840 },
+    ],
+  },
+  {
+    id: 'choc-roasted-almond',
+    name: 'Roasted Almond Crunch Bar',
+    category: 'chocolate',
+    subCategory: 'nut-bar',
+    tagline: 'Whole slow-roasted California almonds in velvety chocolate',
+    description: 'Loaded with oven-roasted almond halves folded generously into tempered dark-milk chocolate. Every bite delivers a satisfying wholesome crunch.',
+    ingredients: 'Slow-roasted almonds (42%), Whole milk solids, Cocoa butter, Cocoa mass, Raw brown sugar',
+    image: 'https://images.unsplash.com/photo-1548741487-18d16a145e80?auto=format&fit=crop&w=800&q=80',
+    badge: 'Best Seller',
+    sizeOptions: [
+      { label: '250 g bar', weight: '250g', price: 260 },
+      { label: '500 g slab', weight: '500g', price: 500 },
+      { label: '1 kg gift pack', weight: '1kg', price: 950 },
+    ],
+  },
+  {
+    id: 'choc-cashew-raisin',
+    name: 'Cashew & Black Currant Bar',
+    category: 'chocolate',
+    subCategory: 'nut-bar',
+    tagline: 'Creamy milk chocolate studded with buttery cashews and sweet currants',
+    description: 'A beloved hill-station classic! Golden pan-roasted cashew nuts paired with juicy sun-dried black currants in a smooth, creamy milk chocolate base.',
+    ingredients: 'Toasted cashews (30%), Sun-dried black currants (15%), Whole milk chocolate',
+    image: 'https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80',
+    badge: 'Classic',
+    sizeOptions: [
+      { label: '250 g bar', weight: '250g', price: 250 },
+      { label: '500 g slab', weight: '500g', price: 480 },
+      { label: '1 kg pack', weight: '1kg', price: 920 },
+    ],
+  },
+  {
+    id: 'choc-hazelnut-praline',
+    name: 'Hazelnut Praline Truffle Bar',
+    category: 'chocolate',
+    subCategory: 'nut-bar',
+    tagline: 'Silky smooth hazelnut butter center encased in dark chocolate',
+    description: 'Hand-ground roasted hazelnuts stone-milled into a velvety praline and enveloped in crisp, tempered dark chocolate. Pure indulgence.',
+    ingredients: 'Roasted hazelnuts (38%), Cocoa mass 65%, Cocoa butter, Raw cane sugar',
+    image: 'https://images.unsplash.com/photo-1582293041079-7814c2f12063?auto=format&fit=crop&w=800&q=80',
+    badge: 'Chef Choice',
+    sizeOptions: [
+      { label: '250 g box', weight: '250g', price: 290 },
+      { label: '500 g box', weight: '500g', price: 560 },
+    ],
+  },
+  {
+    id: 'choc-orange-zest',
+    name: 'Orange Zest Dark Chocolate',
+    category: 'chocolate',
+    subCategory: 'dark',
+    tagline: 'Candied citrus peel paired with intense 65% dark chocolate',
+    description: 'Hand-scraped fresh orange zest gently candied in-house and folded into our signature dark chocolate. Vibrant, citrusy aroma with a zesty finish.',
+    ingredients: 'Cocoa solids 65%, Fresh candied orange peel, Cocoa butter, Cane sugar',
+    image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80',
+    sizeOptions: [
+      { label: '250 g bar', weight: '250g', price: 250 },
+      { label: '500 g slab', weight: '500g', price: 480 },
+    ],
+  },
+  {
+    id: 'choc-gift-box',
+    name: 'Kodaikanal Heritage Gift Box',
+    category: 'chocolate',
+    subCategory: 'gift-box',
+    tagline: 'An exquisite handpicked assortment of our best artisanal creations',
+    description: 'Hand-crafted luxury gift box featuring an assortment of Roasted Almond Crunch, Dark Mountain 70%, Cashew Currant, and Orange Zest. Elegantly packaged with ribbon and cold-pack insulation.',
+    ingredients: 'Assorted handcrafted chocolates and nut bars',
+    image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80',
+    badge: 'Gifting Special',
+    sizeOptions: [
+      { label: '400 g box (16 pcs)', weight: '400g', price: 490 },
+      { label: '750 g luxury box (30 pcs)', weight: '750g', price: 880 },
+      { label: '1.2 kg festive hamper', weight: '1.2kg', price: 1390 },
+    ],
+  },
+  {
+    id: 'choc-honeycomb-milk',
+    name: 'Honeycomb Toffee Milk Chocolate',
+    category: 'chocolate',
+    subCategory: 'milk',
+    tagline: 'Golden airy honey crunch embedded in creamy mountain milk chocolate',
+    description: 'Crispy caramelized honeycomb sponge shards folded through smooth milk chocolate. Irresistibly sweet, crunchy, and buttery.',
+    ingredients: 'Milk chocolate, Aerated honey toffee (sugar, Kodai wild forest honey, baking soda), Cocoa butter',
+    image: 'https://images.unsplash.com/photo-1575372587186-500e39149479?auto=format&fit=crop&w=800&q=80',
+    sizeOptions: [
+      { label: '250 g bar', weight: '250g', price: 240 },
+      { label: '500 g slab', weight: '500g', price: 460 },
+    ],
+  },
+  {
+    id: 'choc-fruit-nut-cluster',
+    name: 'Mountain Fruit & Nut Clusters',
+    category: 'chocolate',
+    subCategory: 'nut-bar',
+    tagline: 'Pistachios, walnuts, cranberries, and roasted almonds dipped in dark chocolate',
+    description: 'Bite-sized clusters loaded with premium dry fruits and nuts hand-drizzled with 60% tempered chocolate. The ultimate tea-time companion.',
+    ingredients: 'Pistachios, Walnuts, Cranberries, Almonds, 60% Dark chocolate',
+    image: 'https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&w=800&q=80',
+    badge: 'Staff Pick',
+    sizeOptions: [
+      { label: '250 g jar', weight: '250g', price: 280 },
+      { label: '500 g jar', weight: '500g', price: 540 },
+    ],
+  },
+];
+
+export const WELLNESS_OIL_PRODUCTS: Product[] = [
+  {
+    id: 'oil-eucalyptus',
+    name: 'Pure Nilgiri Eucalyptus Oil',
+    category: 'wellness-oil',
+    subCategory: 'oil',
+    tagline: 'Steam-distilled 100% natural oil from Kodaikanal hill groves',
+    description: 'Extracted from wild eucalyptus globulus leaves grown in the cool elevation of the Western Ghats. A trusted traditional home remedy for cold relief, steam inhalation, chest congestion, and soothing headache relief.',
+    ingredients: '100% Pure steam-distilled Eucalyptus Globulus leaf essential oil',
+    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80',
+    badge: 'Kodai Special',
+    sizeOptions: [
+      { label: '100 ml glass bottle', weight: '100ml', price: 180 },
+      { label: '200 ml economy pack', weight: '200ml', price: 330 },
+      { label: '500 ml family pack', weight: '500ml', price: 750 },
+    ],
+  },
+  {
+    id: 'oil-wintergreen',
+    name: 'Pure Wintergreen Oil (Gaultheria)',
+    category: 'wellness-oil',
+    subCategory: 'oil',
+    tagline: 'Natural methyl salicylate for soothing joint and muscular discomfort',
+    description: 'Distilled from wild wintergreen leaves native to Kodaikanal hills. Naturally rich in warming methyl salicylate, excellent for soothing backaches, stiff knees, neck strain, and sports soreness.',
+    ingredients: '100% Pure Gaultheria fragrantissima (Wintergreen) essential oil',
+    image: 'https://images.unsplash.com/photo-1608571424266-edeb9bbefdec?auto=format&fit=crop&w=800&q=80',
+    badge: 'Pain Relief',
+    sizeOptions: [
+      { label: '60 ml bottle', weight: '60ml', price: 220 },
+      { label: '120 ml bottle', weight: '120ml', price: 390 },
+    ],
+  },
+  {
+    id: 'oil-lemongrass-citronella',
+    name: 'Lemongrass & Citronella Diffuser Oil',
+    category: 'wellness-oil',
+    subCategory: 'oil',
+    tagline: 'Fresh aromatic citrus essence for home scenting and natural mosquito repellent',
+    description: 'Crisp, invigorating citrus fragrance extracted from freshly harvested lemongrass and citronella grass. Ideal for aroma diffusers, room freshening, and natural insect deterrence.',
+    ingredients: 'Pure steam-distilled Cymbopogon flexuosus (Lemongrass) & Citronella oil blend',
+    image: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
+    sizeOptions: [
+      { label: '100 ml bottle', weight: '100ml', price: 190 },
+      { label: '250 ml bottle', weight: '250ml', price: 420 },
+    ],
+  },
+  {
+    id: 'oil-herbal-hair',
+    name: 'Hill Herbal Nourishing Hair Oil',
+    category: 'wellness-oil',
+    subCategory: 'oil',
+    tagline: 'Slow-cooked mountain herbs, bhringraj, amla & cold-pressed virgin coconut oil',
+    description: 'Traditional slow-infused recipe prepared in small brass vessels over wood fire. Enriched with wild Amla, Bhringraj, Brahmi, Hibiscus, and Curry leaves to strengthen roots and cool the scalp.',
+    ingredients: 'Cold pressed coconut oil, Sesame oil, Bhringraj, Amla, Brahmi, Fenugreek, Vetiver',
+    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
+    badge: 'Artisanal Blend',
+    sizeOptions: [
+      { label: '150 ml bottle', weight: '150ml', price: 280 },
+      { label: '300 ml bottle', weight: '300ml', price: 510 },
+    ],
+  },
+];
+
+export const ALL_PRODUCTS = [...CHOCOLATE_PRODUCTS, ...WELLNESS_OIL_PRODUCTS];
+
+export const FAQ_ITEMS = [
+  {
+    question: 'How long does delivery take?',
+    answer: 'Orders usually arrive in 2 to 4 days within Tamil Nadu. We confirm the exact timing on WhatsApp when you order.',
+  },
+  {
+    question: 'Will the chocolate melt on the way?',
+    answer: 'We pack in insulated wrap and avoid slow shipping in hot weather. If your parcel arrives damaged, message us with a photo and we’ll sort it out.',
+  },
+  {
+    question: 'How much is delivery?',
+    answer: 'Delivery is ₹100 per order and free for orders above ₹600.',
+  },
+  {
+    question: 'How do I pay?',
+    answer: 'Place your order here and it opens in WhatsApp. We confirm your address and share UPI payment details there.',
+  },
+  {
+    question: 'How long does the chocolate stay fresh?',
+    answer: 'Each pack carries a best-before date. Store it in a cool, dry place away from sunlight.',
+  },
+];
+
+export const BUSINESS_CONFIG = {
+  brandName: 'Zivora Chocolates',
+  phone: '+91 63803 83552',
+  phoneClean: '916380383552',
+  instagram: '@zivora_chocolates',
+  instagramUrl: 'https://instagram.com/zivora_chocolates',
+  fssaiNumber: '22424019000128',
+  location: 'Convent Road, Kodaikanal, Dindigul District, Tamil Nadu - 624101',
+  deliveryFee: 100,
+  freeDeliveryThreshold: 600,
+};
